@@ -8,19 +8,37 @@
 - crashes
 - clean all his
 - fix any error
-# DESCRIPTION
-In txAdmin codebase, we try to keep things lean, this is one of the few reasons after one year of project, our code base is not that bad.
-And as part of the process, we "retired" many features and parts of our code base, here is a relation of the majority of them and the reason why:
 
-Setup script: Now everything is automatic when you start with a profile set in the convars;
-Admin add script: Now its done via the master account creation UI flow, and the Admin Manager page;
-Config tester: With the gained knowledge of the edge cases, it became way easier to implement better checks and actionable error messages on the settings page;
-Resources injector: With the integration with FiveM, our plans for it changed drastically. It may or may not come back, meanwhile it was removed to prevent issues;
-Automatic cache cleaner: This feature were created due to the vast number of requests, but in the end this "common knowledge" was based on misinformation, therefore it was removed since we don't actually need it;
-SSL support: With the rework of the entire web layer of txAdmin in preparation with the FiveM integration, we ended up removing this (tricky to implement) feature. But don't worry, one of the benefits from the integration is that now we have the FiveM cfx.re reverse proxy, which by default supports HTTPS;
-Experiments: Well... not much to experience with right now;
-Discord static commands: I don't think anyone ever used it since they can do it with basically any other bot;
-Set process priority: Although it was quite requested in the beginning, people just don't seem to use it;
-Menu Weed troll effect: It was just too similar to the drunk effect one, not worth keeping.
-Don't cry because they are gone.
-Smile because they existed :)
+Recipe-based Server Deployer: create a server in under 60 seconds! (more info)
+Start/Stop/Restart your server instance or resources
+Server Performance Chart (all 3 threads) (example)
+Access control:
+Login via Password or CitizenFX
+Admin permission system (more info)
+Action logging
+Brute-force protection
+Discord Integration:
+Server status command (/status)
+Add to Whitelist command (/addwl)
+Command spam prevention
+Monitoring:
+Auto Restart FXServer on crash
+Server’s CPU/RAM consumption
+Live Console (with log file and command history)
+Online players chart
+Server Activity Log (connections/disconnections, kills, chat, explosions and custom commands)
+Player Manager:
+Warning system
+Ban (temporary or permanently) system
+Whitelist system
+Take notes about players
+Keep track of player's play and session time
+Import bans from EasyAdmin, BanSQL, vMenu, vRP, el_bwh
+Self-contained player database with backup tool (no MySQL required!)
+Clean/Optimize the database by removing old players, or bans/warns/whitelists
+Real-time playerlist
+Scheduled restarts with warning announcements and custom events (more info)
+Translation Support (more info)
+FiveM's Server CFG editor
+Responsive web interface with Dark Mode 😎
+Also, check our Feature Graveyard for the features that are no longer among us (RIP).
